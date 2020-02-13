@@ -3,6 +3,8 @@ package com.koalin.commerceshopesystem.user.mapper;
 import com.koalin.commerceshopesystem.user.bean.UmsMemberLevel;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * @version 1.0
  * @ClassName UmsMemberLevelMapper
@@ -11,4 +13,6 @@ import tk.mybatis.mapper.common.Mapper;
  * @Date 2020/2/14 0:28
  */
 public interface UmsMemberLevelMapper  extends Mapper<UmsMemberLevel> {
+
+    List<UmsMemberLevel> selectAllMemberLevel();
 }

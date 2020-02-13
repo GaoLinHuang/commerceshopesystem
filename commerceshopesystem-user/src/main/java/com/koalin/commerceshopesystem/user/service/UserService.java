@@ -1,6 +1,8 @@
 package com.koalin.commerceshopesystem.user.service;
 
 import com.koalin.commerceshopesystem.user.bean.UmsMember;
+import com.koalin.commerceshopesystem.user.bean.UmsMemberLevel;
+import com.koalin.commerceshopesystem.user.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 
@@ -13,4 +15,8 @@ import java.util.List;
  */
 public interface UserService {
     List<UmsMember> getAllUser();
+
+    List<UmsMemberReceiveAddress> getReciveAddressByMemverId(String memberId);
+
+    List<UmsMemberLevel> getAllMemberLevel();
 }

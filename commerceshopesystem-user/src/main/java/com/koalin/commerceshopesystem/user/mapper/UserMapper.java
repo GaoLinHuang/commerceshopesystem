@@ -13,6 +13,6 @@ import java.util.List;
  * @Date 2020/2/13 16:57
  */
 @Mapper
-public interface UserMapper {
-    List<UmsMember> selectAllUser();
+public interface UserMapper extends tk.mybatis.mapper.common.Mapper<UmsMember> {
+   List<UmsMember> selectAllUser();
 }

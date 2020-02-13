@@ -4,6 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * @version 1.0
@@ -19,7 +20,7 @@ public class UmsMemberLevel implements Serializable {
     private String name;
     private int growthPoint;
     private int defaultStatus;
-    private Double freeFreightPoint;
+    private BigDecimal freeFreightPoint;
     private int commentGrowthPoint;
     private int priviledgeFreeFreight;
     private int priviledgeSignIn;
@@ -61,11 +62,11 @@ public class UmsMemberLevel implements Serializable {
         this.defaultStatus = defaultStatus;
     }
 
-    public Double getFreeFreightPoint() {
+    public BigDecimal getFreeFreightPoint() {
         return freeFreightPoint;
     }
 
-    public void setFreeFreightPoint(Double freeFreightPoint) {
+    public void setFreeFreightPoint(BigDecimal freeFreightPoint) {
         this.freeFreightPoint = freeFreightPoint;
     }
 
