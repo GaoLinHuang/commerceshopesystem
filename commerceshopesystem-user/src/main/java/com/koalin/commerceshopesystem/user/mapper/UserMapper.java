@@ -1,6 +1,7 @@
 package com.koalin.commerceshopesystem.user.mapper;
 
-import com.koalin.commerceshopesystem.user.bean.UmsMember;
+
+import com.koalin.commerceshopesystem.bean.UmsMember;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

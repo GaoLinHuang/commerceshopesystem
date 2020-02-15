@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD 3.0//EN"
         "http://mybatis.org/schema/mybatis-3-mapper.dtd">
 <mapper namespace="com.koalin.commerceshopesystem.user.mapper.UmsMemberLevelMapper">
-    <select id="selectAllMemberLevel" resultType="com.koalin.commerceshopesystem.user.bean.UmsMemberLevel">
+    <select id="selectAllMemberLevel" resultType="com.koalin.commerceshopesystem.bean.UmsMemberLevel">
         select * from ums_member_level;
     </select>
 </mapper>

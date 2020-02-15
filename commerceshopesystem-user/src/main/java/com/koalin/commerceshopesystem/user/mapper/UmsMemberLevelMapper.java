@@ -1,6 +1,7 @@
 package com.koalin.commerceshopesystem.user.mapper;
 
-import com.koalin.commerceshopesystem.user.bean.UmsMemberLevel;
+
+import com.koalin.commerceshopesystem.bean.UmsMemberLevel;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

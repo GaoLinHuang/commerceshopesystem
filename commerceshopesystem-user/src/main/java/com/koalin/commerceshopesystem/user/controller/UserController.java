@@ -1,10 +1,11 @@
 package com.koalin.commerceshopesystem.user.controller;
 
-import com.koalin.commerceshopesystem.user.bean.UmsMember;
-import com.koalin.commerceshopesystem.user.bean.UmsMemberLevel;
-import com.koalin.commerceshopesystem.user.bean.UmsMemberReceiveAddress;
+
+import com.koalin.commerceshopesystem.bean.UmsMember;
+import com.koalin.commerceshopesystem.bean.UmsMemberLevel;
+import com.koalin.commerceshopesystem.bean.UmsMemberReceiveAddress;
 import com.koalin.commerceshopesystem.user.common.CommonResult;
-import com.koalin.commerceshopesystem.user.service.UserService;
+import com.koalin.commerceshopesystem.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

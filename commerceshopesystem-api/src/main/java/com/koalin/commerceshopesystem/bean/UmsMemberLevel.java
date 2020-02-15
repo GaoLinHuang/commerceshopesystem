@@ -1,4 +1,4 @@
-package com.koalin.commerceshopesystem.user.bean;
+package com.koalin.commerceshopesystem.bean;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

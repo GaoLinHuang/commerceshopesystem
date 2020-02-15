@@ -1,17 +1,7 @@
-package com.koalin.commerceshopesystem.user.bean;
+package com.koalin.commerceshopesystem.bean;
 
-import java.io.Serializable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-/**
- * @version 1.0
- * @ClassName UmsMeberReceiveAddress
- * @Author koalin
- * @Description //TODO UmsMeberReceiveAddress的描述
- * @Date 2020/2/13 23:26
- */
-
+import java.io.Serializable;
 
 public class UmsMemberReceiveAddress implements Serializable {
 
@@ -107,4 +97,3 @@ public class UmsMemberReceiveAddress implements Serializable {
         this.detailAddress = detailAddress;
     }
 }
-

@@ -1,12 +1,14 @@
 package com.koalin.commerceshopesystem.user.service.impl;
 
-import com.koalin.commerceshopesystem.user.bean.UmsMember;
-import com.koalin.commerceshopesystem.user.bean.UmsMemberLevel;
-import com.koalin.commerceshopesystem.user.bean.UmsMemberReceiveAddress;
+
+
+import com.koalin.commerceshopesystem.bean.UmsMember;
+import com.koalin.commerceshopesystem.bean.UmsMemberLevel;
+import com.koalin.commerceshopesystem.bean.UmsMemberReceiveAddress;
+import com.koalin.commerceshopesystem.service.UserService;
 import com.koalin.commerceshopesystem.user.mapper.UmsMemberLevelMapper;
 import com.koalin.commerceshopesystem.user.mapper.UmsMemberReceiveAddressMapper;
 import com.koalin.commerceshopesystem.user.mapper.UserMapper;
-import com.koalin.commerceshopesystem.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
@@ -28,8 +30,9 @@ public class UserServiceImpl implements UserService {
     UserMapper userMapper;
     @Autowired
     UmsMemberReceiveAddressMapper umsMemberReceiveAddressMapper;
-@Autowired
+    @Autowired
     UmsMemberLevelMapper umsMemberLevelMapper;
+
     @Override
     public List<UmsMember> getAllUser() {
         return userMapper.selectAllUser();
@@ -45,8 +48,8 @@ public class UserServiceImpl implements UserService {
 //        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);
 
 
-        Example example =new Example(UmsMemberReceiveAddress.class);
-        example.createCriteria().andEqualTo("memberId",memberId);
+        Example example = new Example(UmsMemberReceiveAddress.class);
+        example.createCriteria().andEqualTo("memberId", memberId);
         List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(example);
 
 
@@ -58,8 +61,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UmsMemberLevel> getAllMemberLevel() {
 
-        //List<UmsMemberLevel> umsMemberReceiveAddresses = umsMemberLevelMapper.selectAllMemberLevel();
-       List<UmsMemberLevel> umsMemberReceiveAddresses = umsMemberLevelMapper.selectAll();
+        List<UmsMemberLevel> umsMemberReceiveAddresses = umsMemberLevelMapper.selectAllMemberLevel();
+        //  List<UmsMemberLevel> umsMemberReceiveAddresses = umsMemberLevelMapper.selectAll();
         return umsMemberReceiveAddresses;
     }
 }

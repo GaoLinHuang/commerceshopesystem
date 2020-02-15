@@ -1,8 +1,7 @@
-package com.koalin.commerceshopesystem.user.service;
-
-import com.koalin.commerceshopesystem.user.bean.UmsMember;
-import com.koalin.commerceshopesystem.user.bean.UmsMemberLevel;
-import com.koalin.commerceshopesystem.user.bean.UmsMemberReceiveAddress;
+package com.koalin.commerceshopesystem.service;
+import com.koalin.commerceshopesystem.bean.UmsMember;
+import com.koalin.commerceshopesystem.bean.UmsMemberLevel;
+import com.koalin.commerceshopesystem.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 
