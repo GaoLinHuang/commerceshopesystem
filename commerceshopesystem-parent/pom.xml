@@ -108,7 +108,7 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
 <!--                <version>${httpclient.version}</version>-->
-                <version>RELEASE</version>
+                <version>4.5.13</version>
             </dependency>
 
             <dependency>
